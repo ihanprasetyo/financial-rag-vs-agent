@@ -1,61 +1,83 @@
-﻿# Financial RAG + Agent
-
----
+﻿---
 
 ## 🧾 Project Overview
 
-**Financial RAG + Agent** is a prototype system that compares two approaches to question answering over financial documents:
+**Financial RAG + Agent** is a prototype system that compares two approaches to question answering over long, structured financial documents:
 
 1. **Retrieval-Augmented Generation (RAG)**  
-2. **Agentic Reasoning using Tool-Calling**
+2. **Agentic Reasoning with Tool-Calling and Multi-Step Logic**
 
-The goal is to extract structured answers (e.g. revenue, debt, margins) from lengthy, real-world financial reports such as Apple's 10-K which I used to test my codes and the accuracy. The system supports evaluation across 20+ numeric questions with expected answers, enabling accuracy, timing, and behavior comparison between both methods.
-
----
-
-## 🚧 Status: Proof of Concept (Demo Only)
-
-This project is intended as a **proof of concept**, not a production-grade solution.
-
-- It is designed to demonstrate technical feasibility and reasoning strategies.
-- All logic is kept as simple and transparent as possible for educational and evaluative purposes.
-- It does not yet include advanced filtering, re-ranking, full tool orchestration, or secure data handling.
-
-If accuracy, security, or robustness is critical, a full production pipeline with retriever fine-tuning, scalable vector storage, tool chaining, and multi-turn agent memory would be required. See below for ideas to improve accuracy.
+The system extracts structured insights (e.g. revenue, cash flow, debt) from public financial documents such as 10-K reports, treasury filings, and risk disclosures. It is evaluated on a curated set of 20+ numeric QA pairs for accuracy, timing, and answer quality.
 
 ---
 
-## 🧪 Key Features
+## 🚧 Status: Work in Progress (Demo / Proof of Concept)
 
-- 🔎 **Semantic Retrieval** using `sentence-transformers`
-- 🧠 **Agent Reasoning Pipeline** with multi-step logic
-- ✅ **Exact-Match Accuracy Evaluation** on 20+ quantitative QA pairs
-- 📊 **Side-by-Side Performance Comparison** (accuracy + latency)
-- 📁 **Evaluation Report Export** to `eval_report.csv`
+This is a **portfolio demo**, not a production application.  
+Some features are fully implemented, while others are in progress or planned.
+
+---
+
+### ✅ Implemented (Working)
+
+- 🔎 **Semantic Retriever** using `sentence-transformers` and FAISS
+- 🧠 **Agentic QA Pipeline** with interpretable reasoning trace
+- 📊 **Side-by-Side RAG vs Agent Evaluation** (accuracy + latency)
+- 🧾 **Exact-Match QA Benchmark** on financial reporting metrics
+- 📁 **Structured Report Export** to `eval_report.csv`
+
+---
+
+### 🧩 Partially Implemented
+
+- 🛠️ **LangChain-style Tool Traces**  
+  The agent executes retrieval → generation with printed trace; full toolchain abstraction TBD.
+  
+- 🧠 **Retriever Training Setup**  
+  A custom retriever class is scaffolded; fine-tuning on QA pairs is planned.
+
+---
+
+### ☁️ Planned (Future Enhancements)
+
+- 🧑‍💼 **Streamlit Frontend**  
+  For interactive QA, answer trace display, and chunk visualization
+
+- ☁️ **Azure Deployment**  
+  Using a free-tier B1s VM with FAISS backend, Streamlit app, and Azure OpenAI GPT-3.5
+
+- 🧪 **Enterprise Readiness Features**  
+  Including chunk metadata tracking, structured logging, and cross-domain benchmarking
 
 ---
 
 ## 💡 Why This Matters
 
-Financial documents are long, structured, and filled with subtle numerical data. QA systems need to combine:
+Documents like 10-Ks and regulatory filings contain dense, high-stakes information.  
+Building QA systems that are:
 
-- **Precision**: Extract exact numbers like “net income” or “long-term debt”
-- **Transparency**: Show where the answer came from
-- **Flexibility**: Handle ambiguous queries, tool calls, or fallback logic
+- **Precise** (return correct numbers)
+- **Transparent** (show where answers came from)
+- **Flexible** (work across domains like audit, legal, compliance)
 
-This demo lays the foundation for building such systems, particularly in regulated domains like finance, audit, and legal.
+…is critical for GenAI adoption in the financial industry.
+
+This project demonstrates how retrieval, LLM reasoning, and structured evaluation can be combined into a clear and extensible system.
 
 ---
 
 ## 📦 Technologies Used
 
 - Python 3.10+
-- FAISS (for semantic vector search)
+- FAISS (semantic vector index)
 - HuggingFace `sentence-transformers`
-- OpenAI GPT-3.5 API (chat + retrieval)
-- CSV logging + structured evaluation
+- OpenAI GPT-3.5 (chat + completion)
+- Streamlit (planned)
+- Azure B1s VM (planned)
+- CSV/JSON-based benchmarking and evaluation
 
 ---
+
 
 ## 🛠️ Improving Accuracy (Potential Enhancements)
 
