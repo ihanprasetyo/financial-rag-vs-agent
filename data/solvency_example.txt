@@ -1,0 +1,7 @@
+Under Solvency II, the Solvency Capital Requirement (SCR) represents the amount of capital that an insurance company must hold to reduce the risk of insolvency. The SCR is calibrated to ensure a 99.5% confidence level over a one-year horizon.
+
+The calculation of the SCR may follow a standard formula or an internal model. Key risk components include market risk, underwriting risk, operational risk, and counterparty default risk.
+
+In addition, companies must calculate a Minimum Capital Requirement (MCR) as a lower bound. Failure to meet MCR triggers more immediate supervisory action.
+
+Solvency II also requires detailed disclosure under the Solvency and Financial Condition Report (SFCR), which outlines the insurer’s risk profile, governance, and capital management strategy.
