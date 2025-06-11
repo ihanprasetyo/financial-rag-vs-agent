@@ -2,7 +2,9 @@
 
 from openai import OpenAI
 import os
+from dotenv import load_dotenv
 
+load_dotenv()
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 #"gpt-3.5-turbo"
 def generate_answer(question, chunks, model="gpt-3.5-turbo"):

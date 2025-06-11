@@ -1,0 +1,122 @@
+[
+  {
+    "question": "What was Simulated Company's Gross margin in 2018 in USD billion?",
+    "expected_answer": "15.40"
+  },
+  {
+    "question": "What was Simulated Company's Total revenue in 2019 in USD billion?",
+    "expected_answer": "29.90"
+  },
+  {
+    "question": "What was Simulated Company's Long-term debt in 2009 in USD billion?",
+    "expected_answer": "13.80"
+  },
+  {
+    "question": "What was Simulated Company's Total assets in 2007 in USD billion?",
+    "expected_answer": "62.00"
+  },
+  {
+    "question": "What was Simulated Company's Cash and equivalents in 2011 in USD billion?",
+    "expected_answer": "6.20"
+  },
+  {
+    "question": "What was Simulated Company's Eps (basic) in 2013 in USD billion?",
+    "expected_answer": "3.75"
+  },
+  {
+    "question": "What was Simulated Company's Total revenue in 2001 in USD billion?",
+    "expected_answer": "22.70"
+  },
+  {
+    "question": "What was Simulated Company's Long-term debt in 2008 in USD billion?",
+    "expected_answer": "13.60"
+  },
+  {
+    "question": "What was Simulated Company's R&d spending in 2008 in USD billion?",
+    "expected_answer": "2.50"
+  },
+  {
+    "question": "What was Simulated Company's Total revenue in 2010 in USD billion?",
+    "expected_answer": "26.30"
+  },
+  {
+    "question": "What was Simulated Company's Total assets in 2013 in USD billion?",
+    "expected_answer": "68.00"
+  },
+  {
+    "question": "What was Simulated Company's Net income q1 in Q1 2017 in USD billion?",
+    "expected_answer": "1.85"
+  },
+  {
+    "question": "What was Simulated Company's Total assets in 2001 in USD billion?",
+    "expected_answer": "56.00"
+  },
+  {
+    "question": "What was Simulated Company's Total revenue in 2014 in USD billion?",
+    "expected_answer": "27.90"
+  },
+  {
+    "question": "What was Simulated Company's Eps (basic) in 2001 in USD billion?",
+    "expected_answer": "3.15"
+  },
+  {
+    "question": "What was Simulated Company's Gross margin in 2008 in USD billion?",
+    "expected_answer": "12.40"
+  },
+  {
+    "question": "What was Simulated Company's Total revenue in 2019 in USD billion?",
+    "expected_answer": "29.90"
+  },
+  {
+    "question": "What was Simulated Company's Gross margin in 2017 in USD billion?",
+    "expected_answer": "15.10"
+  },
+  {
+    "question": "What was Simulated Company's Long-term debt in 2017 in USD billion?",
+    "expected_answer": "15.40"
+  },
+  {
+    "question": "What was Simulated Company's Gross margin in 2004 in USD billion?",
+    "expected_answer": "11.20"
+  },
+  {
+    "question": "What was Simulated Company's Net income q3 in Q3 2001 in USD billion?",
+    "expected_answer": "1.25"
+  },
+  {
+    "question": "What was Simulated Company's Net income q1 in Q1 2010 in USD billion?",
+    "expected_answer": "1.50"
+  },
+  {
+    "question": "What was Simulated Company's Total assets in 2014 in USD billion?",
+    "expected_answer": "69.00"
+  },
+  {
+    "question": "What was Simulated Company's Total assets in 2020 in USD billion?",
+    "expected_answer": "75.00"
+  },
+  {
+    "question": "What was Simulated Company's Net income q3 in Q3 2006 in USD billion?",
+    "expected_answer": "1.50"
+  },
+  {
+    "question": "What was Simulated Company's Total revenue in 2010 in USD billion?",
+    "expected_answer": "26.30"
+  },
+  {
+    "question": "What was Simulated Company's Cash and equivalents in 2010 in USD billion?",
+    "expected_answer": "6.00"
+  },
+  {
+    "question": "What was Simulated Company's Net income q3 in Q3 2020 in USD billion?",
+    "expected_answer": "2.20"
+  },
+  {
+    "question": "What was Simulated Company's Net income q1 in Q1 2001 in USD billion?",
+    "expected_answer": "1.05"
+  },
+  {
+    "question": "What was Simulated Company's Net income q3 in Q3 2010 in USD billion?",
+    "expected_answer": "1.70"
+  }
+]

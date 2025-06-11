@@ -11,43 +11,38 @@ The system extracts structured insights (e.g. revenue, cash flow, debt) from pub
 
 ---
 
-## 🚧 Status: Work in Progress (Demo / Proof of Concept)
+## 🚧 Status: Partially Complete (Live Azure Demo)
 
-This is a **portfolio demo**, not a production application.  
-Some features are fully implemented, while others are in progress or planned.
+This is a **portfolio demo**, deployed and running on an Azure VM.  
+Core features are implemented and working; others are scaffolded or planned.
 
 ---
 
 ### ✅ Implemented (Working)
 
 - 🔎 **Semantic Retriever** using `sentence-transformers` and FAISS
-- 🧠 **Agentic QA Pipeline** with interpretable reasoning trace
-- 📊 **Side-by-Side RAG vs Agent Evaluation** (accuracy + latency)
-- 🧾 **Exact-Match QA Benchmark** on financial reporting metrics
-- 📁 **Structured Report Export** to `eval_report.csv`
+- 🧠 **RAG Pipeline** with chunk retrieval + GPT-3.5 generation
+- 🖥️ **Streamlit Frontend** hosted on public Azure IP (B1s VM)
+- ☁️ **Azure Deployment** with persistent FAISS index and secure `.env` API key
+- 📁 **Local Financial Reports** stored securely on VM and indexed at runtime
 
 ---
 
 ### 🧩 Partially Implemented
 
-- 🛠️ **LangChain-style Tool Traces**  
-  The agent executes retrieval → generation with printed trace; full toolchain abstraction TBD.
-  
-- 🧠 **Retriever Training Setup**  
-  A custom retriever class is scaffolded; fine-tuning on QA pairs is planned.
+- 🛠️ **Agentic QA Pipeline** with multi-step reasoning scaffolding (logic WIP)
+- 🧠 **Retriever Training Setup** (planned for fine-tuning on QA pairs)
+- 📊 **Evaluation Script** (`eval_rag_financial.py`) to be added
+- 📄 **Structured Logging + Chunk Metadata** (placeholder only)
 
 ---
 
 ### ☁️ Planned (Future Enhancements)
 
-- 🧑‍💼 **Streamlit Frontend**  
-  For interactive QA, answer trace display, and chunk visualization
-
-- ☁️ **Azure Deployment**  
-  Using a free-tier B1s VM with FAISS backend, Streamlit app, and Azure OpenAI GPT-3.5
-
-- 🧪 **Enterprise Readiness Features**  
-  Including chunk metadata tracking, structured logging, and cross-domain benchmarking
+- 🧑‍💼 **LangChain-style Agent Execution** with interpretable traces
+- 📊 **Side-by-Side RAG vs Agent Evaluation**
+- 🧾 **Exact-Match QA Benchmark** and report export to CSV
+- 🧪 **Enterprise Readiness Features** — auto-scaling, retries, monitoring
 
 ---
 
@@ -72,8 +67,8 @@ This project demonstrates how retrieval, LLM reasoning, and structured evaluatio
 - FAISS (semantic vector index)
 - HuggingFace `sentence-transformers`
 - OpenAI GPT-3.5 (chat + completion)
-- Streamlit (planned)
-- Azure B1s VM (planned)
+- Streamlit
+- Azure B1s VM
 - CSV/JSON-based benchmarking and evaluation
 
 ---
