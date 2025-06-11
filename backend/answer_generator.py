@@ -4,7 +4,7 @@ from openai import OpenAI
 import os
 
 client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
-
+#"gpt-3.5-turbo"
 def generate_answer(question, chunks, model="gpt-3.5-turbo"):
     prompt = f"""You are a financial analyst. Use the context below to answer the question. Be concise and accurate.
 
