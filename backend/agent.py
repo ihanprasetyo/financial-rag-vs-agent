@@ -2,7 +2,8 @@
 
 from backend.chunking import load_and_chunk
 from backend.retriever import FinancialRetriever
-from backend.answer_generator import generate_answer
+# from backend.answer_generator import generate_answer
+from backend.langchain_answer_generator import generate_answer_lc as generate_answer
 
 class FinanceAgent:
     def __init__(self, doc_path):

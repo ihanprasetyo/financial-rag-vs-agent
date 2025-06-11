@@ -7,7 +7,7 @@ from backend.retriever import FinancialRetriever
 from backend.answer_generator import generate_answer
 from backend.agent import FinanceAgent
 
-def load_eval_set(path="eval_set.json"):
+def load_eval_set(path="eval_set_apple.json"):
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 

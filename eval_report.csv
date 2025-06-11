@@ -1,29 +1,29 @@
 question,expected,rag_answer,rag_match,rag_time,agent_answer,agent_match,agent_time
-What was Apple's total net sales in 2016 in USD million?,"215,639","Apple's total net sales in 2016 were $215,639 million.",✅,7.52,"Apple's total net sales in 2016 were $215,639 million USD.",✅,5.42
-What was Apple's net income in 2016 in USD million?,"45,687","Apple's net income in 2016 was $45,687 million USD.",✅,5.77,"Apple's net income in 2016 was $45,687 million USD.",✅,5.45
-What was Apple's operating income in 2016 in USD million?,"60,024","Apple's operating income in 2016 was $60,024 million USD.",✅,6.28,"Apple's operating income in 2016 was $60,024 million USD.",✅,7.18
-How much did Apple spend on R&D in 2016 in USD billion?,10.0,Apple spent $10.0 billion on Research and Development (R&D) in 2016.,✅,7.22,Apple spent $10.0 billion on Research and Development (R&D) in 2016.,✅,7.65
-How much cash did Apple have in 2016 in USD billion?,20.5,Apple had $20.5 billion in cash in 2016.,✅,6.33,Apple had $20.5 billion in cash in 2016 in USD billion.,✅,7.55
-What was the value of Apple’s short-term marketable securities in 2016 in USD million?,"46,671","The value of Apple's short-term marketable securities in 2016 was $46,671 million USD.",✅,9.11,"The value of Apple's short-term marketable securities in 2016 was $46,671 million USD.",✅,10.2
-How much long-term marketable securities did Apple hold in 2016 in USD million?,"170,430","In 2016, Apple held $237,585 million in long-term marketable securities.",❌,7.26,"Apple held $205,666 million in long-term marketable securities in 2016.",❌,6.44
-What were Apple's total assets in 2016 in USD million?,"321,686","Apple's total assets in 2016 were $321,686 million.",✅,6.9,"Apple's total assets in 2016 were $321,686 million USD.",✅,6.45
-What were Apple's total liabilities in 2016 in USD million?,"193,437","Apple's total liabilities in 2016 were $193,437 million USD.",✅,7.41,"Apple's total liabilities in 2016 were $193,437 million.",✅,7.82
-How much long-term debt did Apple report in 2016 in USD billion?,75.4,Apple reported $75.4 billion of long-term debt in 2016.,✅,7.72,Apple reported $75.4 billion of long-term debt in 2016 in USD billion.,✅,8.26
-What was Apple’s earnings per share (basic) in 2016 in USD?,8.35,Apple's earnings per share (basic) in 2016 was $8.35 USD.,✅,7.88,Apple's earnings per share (basic) in 2016 was $8.35 USD.,✅,7.88
-What was the dividend declared per share in 2016 in USD?,2.18,The dividend declared per share in 2016 was $2.18 in USD.,✅,6.68,The dividend declared per share in 2016 was $2.18 USD.,✅,6.47
-How much cash was used for financing activities in 2016 in USD billion?,20.5,$20.5 billion,✅,6.72,$20.5 billion,✅,6.81
-How much did Apple spend on dividends in 2016 in USD million?,"12,150","Apple spent $11,928 million on dividends in 2016.",❌,6.62,"Apple spent $11,912 million on dividends in 2016.",❌,7.7
-How much debt did Apple issue in 2016 in USD billion?,25.0,Apple issued $78.4 billion in debt in 2016.,❌,7.48,Apple issued $78.4 billion in debt in 2016.,❌,7.7
-What were Apple’s commercial paper borrowings in 2016 in USD billion?,8.1,Apple's commercial paper borrowings in 2016 were $8.1 billion.,✅,11.2,Apple's commercial paper borrowings in 2016 were $8.1 billion in USD billion.,✅,6.87
-What was Apple’s gross margin in 2016 in USD million?,"84,263","Apple's gross margin in 2016 was $84,263 million.",✅,7.52,"Apple's gross margin in 2016 was $84,263 million.",✅,7.26
-What was Apple’s income tax provision in 2016 in USD million?,"15,685","Apple's income tax provision in 2016 was $15,685 million.",✅,7.75,"Apple's income tax provision in 2016 was $15,685 million USD.",✅,7.55
-What was Apple’s quarterly revenue in Q4 2016 in USD million?,"46,852","Apple's quarterly revenue in Q4 2016 was $215,639 million USD.",❌,6.96,"Apple's quarterly revenue in Q4 2016 was $215,639 million.",❌,7.54
-What was the net income in Q1 2016 in USD million?,"18,361","The net income in Q1 2016 was $45,687 million.",❌,7.68,The net income in Q1 2016 was $45.7 billion in USD million.,❌,8.37
-How much revenue came from iPhone in 2016 in USD million?,"136,700","The revenue from iPhone in 2016 was $136,700 million USD.",✅,7.51,"The revenue from iPhone in 2016 was $136,700 million USD.",✅,8.12
-How much revenue came from Services in 2016 in USD million?,"24,348","$24,348 million",✅,9.59,"$24,348 million",✅,9.76
-What was Apple’s revenue from China in 2016 in USD million?,"48,492","Apple's revenue from China in 2016 was $48,492 million USD.",✅,7.0,"Apple's revenue from China in 2016 was $48,492 million USD.",✅,6.39
-What were Apple’s total capital expenditures in 2016 in USD billion?,12.8,Apple's total capital expenditures in 2016 were $12.8 billion USD.,✅,5.99,Apple's total capital expenditures in 2016 were $12.8 billion USD.,✅,5.98
-What were Apple's cash holdings outside the U.S. in 2016 in USD billion?,216.0,$216.0 billion,✅,6.81,"In 2016, Apple's cash holdings outside the U.S. were $216.0 billion in USD billion.",✅,6.63
-What were Apple's operating expenses in 2016 in USD million?,"24,239","Apple's operating expenses in 2016 were $24,239 million.",✅,5.94,"Apple's operating expenses in 2016 were $24,239 million USD.",✅,5.7
-How much did Apple spend on share repurchases in 2016 in USD million?,"12,000","Apple spent $29,000 million on share repurchases in 2016.",❌,6.35,Apple spent a total of $34 billion on share repurchases in 2016.,❌,5.72
-What was Apple's comprehensive income in 2016 in USD million?,"46,666","Apple's comprehensive income in 2016 was $46,666 million USD.",✅,6.18,"Apple's comprehensive income in 2016 was $46,666 million USD.",✅,5.91
+What was Apple's total net sales in 2016 in USD million?,"215,639","Apple's total net sales in 2016 were $215,639 million USD.",✅,9.6,"Apple's total net sales in 2016 were $215,639 million USD.",✅,7.56
+What was Apple's net income in 2016 in USD million?,"45,687","Apple's net income in 2016 was $45,687 million USD.",✅,12.49,"Apple's net income in 2016 was $45,687 million USD.",✅,7.3
+What was Apple's operating income in 2016 in USD million?,"60,024","Apple's operating income in 2016 was $60,024 million USD.",✅,7.29,"Apple's operating income in 2016 was $60,024 million USD.",✅,7.8
+How much did Apple spend on R&D in 2016 in USD billion?,10.0,Apple spent $10.0 billion on Research and Development (R&D) in 2016.,✅,7.61,Apple spent $10.0 billion on Research and Development (R&D) in 2016.,✅,7.63
+How much cash did Apple have in 2016 in USD billion?,20.5,Apple had $237.585 billion in cash in 2016.,❌,7.33,Apple had $237.585 billion in cash in 2016.,❌,7.02
+What was the value of Apple’s short-term marketable securities in 2016 in USD million?,"46,671","The value of Apple's short-term marketable securities in 2016 was $46,671 million USD.",✅,7.45,"The value of Apple's short-term marketable securities in 2016 was $46,671 million USD.",✅,8.47
+How much long-term marketable securities did Apple hold in 2016 in USD million?,"170,430","Apple held $205,666 million in long-term marketable securities in 2016.",❌,9.78,"Apple held $205,666 million in long-term marketable securities in 2016.",❌,8.66
+What were Apple's total assets in 2016 in USD million?,"321,686","Apple's total assets in 2016 were $321,686 million USD.",✅,7.53,"Apple's total assets in 2016 were $321,686 million USD.",✅,11.03
+What were Apple's total liabilities in 2016 in USD million?,"193,437","Apple's total liabilities in 2016 were $193,437 million USD.",✅,12.26,"Apple's total liabilities in 2016 were $193,437 million USD.",✅,8.37
+How much long-term debt did Apple report in 2016 in USD billion?,75.4,Apple reported $75.427 billion in long-term debt in 2016.,✅,8.2,Apple reported long-term debt of $75.427 billion in 2016.,✅,6.96
+What was Apple’s earnings per share (basic) in 2016 in USD?,8.35,Apple's earnings per share (basic) in 2016 was $8.35 USD.,✅,7.71,Apple's earnings per share (basic) in 2016 was $8.35 USD.,✅,6.7
+What was the dividend declared per share in 2016 in USD?,2.18,The dividend declared per share in 2016 was $2.18 USD.,✅,6.83,The dividend declared per share in 2016 was $2.18 USD.,✅,7.12
+How much cash was used for financing activities in 2016 in USD billion?,20.5,$20.5 billion USD,✅,7.11,$20.5 billion USD,✅,7.38
+How much did Apple spend on dividends in 2016 in USD million?,"12,150","Apple spent $12,000 million USD on dividends in 2016.",❌,7.52,"Apple spent $12,000 million on dividends in 2016.",❌,9.0
+How much debt did Apple issue in 2016 in USD billion?,25.0,Apple issued $7.0 billion in debt in 2016.,❌,7.34,Apple issued $7.0 billion in debt in 2016.,❌,7.71
+What were Apple’s commercial paper borrowings in 2016 in USD billion?,8.1,Apple's commercial paper borrowings in 2016 were $8.1 billion USD.,✅,7.74,Apple's commercial paper borrowings in 2016 were $8.1 billion USD.,✅,7.11
+What was Apple’s gross margin in 2016 in USD million?,"84,263","Apple's gross margin in 2016 was $84,263 million USD.",✅,7.01,"Apple's gross margin in 2016 was $84,263 million USD.",✅,6.79
+What was Apple’s income tax provision in 2016 in USD million?,"15,685","Apple's income tax provision in 2016 was $15,685 million USD.",✅,7.27,"Apple's income tax provision in 2016 was $15,685 million USD.",✅,7.19
+What was Apple’s quarterly revenue in Q4 2016 in USD million?,"46,852","Apple's quarterly revenue in Q4 2016 was $215,639 million USD.",❌,7.56,"Apple's quarterly revenue in Q4 2016 was $215,639 million USD.",❌,8.91
+What was the net income in Q1 2016 in USD million?,"18,361",The net income in Q1 2016 was $18.7 billion USD.,❌,9.68,The net income in Q1 2016 was $18.7 billion USD.,❌,7.99
+How much revenue came from iPhone in 2016 in USD million?,"136,700","The revenue from iPhone in 2016 was $136,700 million USD.",✅,12.56,"The revenue from iPhone in 2016 was $136,700 million USD.",✅,8.65
+How much revenue came from Services in 2016 in USD million?,"24,348","The revenue from Services in 2016 was $24,348 million USD.",✅,6.9,"The revenue from Services in 2016 was $24,348 million USD.",✅,7.19
+What was Apple’s revenue from China in 2016 in USD million?,"48,492","Apple's revenue from China in 2016 was $48,492 million USD.",✅,6.95,"Apple's revenue from China in 2016 was $48,492 million USD.",✅,9.31
+What were Apple’s total capital expenditures in 2016 in USD billion?,12.8,Apple's total capital expenditures in 2016 were $12.8 billion USD.,✅,7.6,Apple's total capital expenditures in 2016 were $12.8 billion USD.,✅,7.51
+What were Apple's cash holdings outside the U.S. in 2016 in USD billion?,216.0,$216.0 billion USD,✅,7.62,"In 2016, Apple's cash holdings outside the U.S. were $216.0 billion USD.",✅,8.56
+What were Apple's operating expenses in 2016 in USD million?,"24,239","Apple's operating expenses in 2016 were $24,239 million USD.",✅,7.22,"Apple's operating expenses in 2016 were $24,239 million USD.",✅,6.67
+How much did Apple spend on share repurchases in 2016 in USD million?,"12,000",Apple spent $36 billion on share repurchases in 2016.,❌,8.17,Apple spent $36 billion on share repurchases in 2016.,❌,8.04
+What was Apple's comprehensive income in 2016 in USD million?,"46,666","Apple's comprehensive income in 2016 was $46,666 million USD.",✅,11.99,"Apple's comprehensive income in 2016 was $46,666 million USD.",✅,9.29

@@ -19,6 +19,12 @@ This is a **portfolio demo**, publicly deployed and running on an Azure B1s Linu
 Core features like RAG retrieval, GPT-3.5 QA, FAISS index, and a working frontend are fully implemented.  
 Agent logic, retriever training, and advanced evaluation remain in progress.
 
+⚠️ **Note:** This demo runs on a low-cost Azure VM with limited memory and compute.  
+As a result, response times may be very slow or unstable.  
+For production use:
+- Scale up to a larger cloud instance (e.g., Azure Standard B2s or above)
+- Integrate a more capable LLM (e.g., GPT-4-turbo or fine-tuned domain-specific model)
+
 ---
 
 ### ✅ Implemented (Working)
