@@ -79,111 +79,52 @@ This project demonstrates how retrieval, LLM reasoning, and structured evaluatio
 ---
 
 
-## 🛠️ Improving Accuracy (Potential Enhancements)
+## 📊 Current Evaluation Result
 
-This prototype demonstrates a working QA system using both Retrieval-Augmented Generation (RAG) and Agentic reasoning over financial filings. To improve answer **accuracy, robustness, and generalization**, the following enhancements are proposed:
+With the Apple 2016 financial report, the system currently achieves:
+
+- **RAG Accuracy:** ~75%  
+  (exact match on **normalized numeric answers** using a **strict substring-based evaluator** — no tolerance for rounding, rephrasing, or alternative units)  
+- **Agent Accuracy:** Higher reasoning capacity but slower response time
 
 ---
 
-### 🔍 1. Retriever Optimization
+## 🛠️ Potential Enhancements to Improve Accuracy, Robustness, and Generalization
 
-**Problem:** The current retriever uses out-of-the-box `sentence-transformers` without financial fine-tuning.
-
-**Improvements:**
+### 🔍 Retriever Optimization
 - Fine-tune the retriever on domain-specific QA pairs (e.g. 10-K/10-Q forms)
 - Use dense retriever + reranker (e.g. `bge-base-en`, `colbert`, or `splade`)
 - Index heading-based or structured chunks to improve semantic grouping
 
----
-
-### 🧮 2. Answer Format Constraints
-
-**Problem:** The model sometimes returns natural language or full sentences when only a number is expected.
-
-**Improvements:**
+### 🧮 Answer Format Constraints
 - Apply prompt constraints like:  
   *“Answer with only a number in millions. Do not include currency symbols.”*
 - Add post-processing regex to extract numbers from noisy outputs
 - Use function-calling format (OpenAI or Claude) to return structured fields
 
----
-
-### 🧠 3. Agent Reasoning Enhancements
-
-**Problem:** Current agent executes fixed 3-step logic with no mid-loop decisions or fallback plans.
-
-**Improvements:**
+### 🧠 Agent Reasoning Enhancements
 - Add scratchpad reasoning: “Here’s what I found. Next, I’ll...”
 - Let the agent re-query or retry if insufficient data found
 - Implement confidence estimation or answer validation step
 
----
-
-### 📊 4. Training with Synthetic Supervision (GPT-4)
-
-**Problem:** The evaluation set is hand-crafted and small.
-
-**Improvements:**
-- Use GPT-4 to auto-label 1000+ QA pairs with:
-  - Question
-  - Ground-truth answer
-  - Relevant chunk IDs
+### 📊 Training with Synthetic Supervision (GPT-4)
+- Use GPT-4 to auto-label 1000+ QA pairs with question, answer, and relevant chunk IDs
 - Train a retriever or reranker using this as weak supervision
-- Optionally, use GPT-as-a-judge to compare RAG vs Agent output quality
+- Optionally, use GPT as a judge to compare RAG vs Agent output quality
 
----
-
-### 📈 5. Chunking Strategy Tuning
-
-**Problem:** Fixed-length chunking can fragment relevant context.
-
-**Improvements:**
+### 📈 Chunking Strategy Tuning
 - Implement heading-aware or section-based chunking
 - Use sentence/window overlap with semantic cohesion
 - Auto-tune chunk size based on retrieval score coverage
 
----
-
-### 🧪 6. Accuracy Evaluation Improvements
-
-**Problem:** Current evaluation uses substring match only.
-
-**Improvements:**
+### 🧪 Accuracy Evaluation Improvements
 - Normalize numeric scale (e.g., "12.5B" vs "12,500")
 - Use fuzzy string matching for text answers
 - Incorporate GPT-based judgment for long-form or multi-hop questions
 
----
-
-### 🛡️ 7. Robustness & Trust
-
-**Problem:** No safeguards for hallucination or unsupported claims.
-
-**Improvements:**
+### 🛡️ Robustness & Trust
 - Add citation tagging (`[chunk 3]`) to every answer
 - Use groundedness scoring: “Is this answer found in retrieved chunks?”
 - Detect model uncertainty: “Answer not found in retrieved content.”
 
 ---
-
-## 📊 Evaluation Result
-
-With the Apple 2016 financial report, the system currently achieves:
-
-- **RAG Accuracy:** ~75%  
-  (exact match on **normalized numeric answers** using a **strict substring-based evaluator** — no tolerance for rounding, rephrasing, or alternative units)
-**Agent Accuracy:** Higher reasoning capacity but slower response time
-
----
-
-## 🧠 Domain-Specific Tuning (Future Work)
-
-While 75% accuracy is strong for an untuned demo, further improvements are possible via:
-
-- Fine-tuning the retriever on financial QA pairs or financial NLI datasets
-- Improving chunk structure (e.g. section-based or heading-aligned)
-- Adding post-processing to enforce numerical formats (e.g. USD million/billion)
-- Expanding the evaluation set with GPT-labeled data for supervision and reranking
-
-This demonstrates engineering value (retriever design, structured eval) and serves as a strong foundation for more advanced, finance-aware QA systems.
-
