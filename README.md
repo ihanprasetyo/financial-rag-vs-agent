@@ -165,3 +165,25 @@ This prototype demonstrates a working QA system using both Retrieval-Augmented G
 - Detect model uncertainty: “Answer not found in retrieved content.”
 
 ---
+
+## 📊 Evaluation Result
+
+With the Apple 2016 financial report, the system currently achieves:
+
+- **RAG Accuracy:** ~75%  
+  (exact match on **normalized numeric answers** using a **strict substring-based evaluator** — no tolerance for rounding, rephrasing, or alternative units)
+**Agent Accuracy:** Higher reasoning capacity but slower response time
+
+---
+
+## 🧠 Domain-Specific Tuning (Future Work)
+
+While 75% accuracy is strong for an untuned demo, further improvements are possible via:
+
+- Fine-tuning the retriever on financial QA pairs or financial NLI datasets
+- Improving chunk structure (e.g. section-based or heading-aligned)
+- Adding post-processing to enforce numerical formats (e.g. USD million/billion)
+- Expanding the evaluation set with GPT-labeled data for supervision and reranking
+
+This demonstrates engineering value (retriever design, structured eval) and serves as a strong foundation for more advanced, finance-aware QA systems.
+
