@@ -33,7 +33,7 @@ This is a **portfolio demo**, publicly deployed and running on an Azure B1s Linu
 🔗 [**Live App** (Streamlit)](http://20.199.160.183:8501/)
 
 Core features like RAG retrieval, GPT-3.5 QA, FAISS index, and a working frontend are fully implemented.  
-Agent logic, retriever training, and advanced evaluation remain in progress.
+Agent logic, retriever training, and advanced evaluation could be further expanded.
 
 ⚠️ **Note:** This demo runs on a low-cost Azure VM with limited memory and compute.  
 As a result, response times may be very slow or unstable, and accuracy might be low.  
