@@ -7,9 +7,25 @@
 1. **Retrieval-Augmented Generation (RAG)**  
 2. **Agentic Reasoning with Tool-Calling and Multi-Step Logic**
 
-The system extracts structured insights (e.g. revenue, cash flow, debt) from public financial documents such as 10-K reports, treasury filings, and risk disclosures. It is evaluated on a curated set of 20+ numeric QA pairs for accuracy, timing, and answer quality.
+The system extracts structured insights (e.g. revenue, cash flow, debt) from public financial documents such as 10-K reports, treasury filings, and risk disclosures. It is evaluated on a curated set of numeric QA pairs for accuracy, timing, and answer quality.
 
 ---
+
+## 💡 Potential Use Cases
+
+This project demonstrates how Retrieval-Augmented Generation (RAG) and basic agentic reasoning can be applied to real-world finance workflows.
+
+### ✅ Practical Applications
+
+1. **Confidential Document QA**  
+   Can be deployed internally at scale to answer questions over confidential company documents (e.g. treasury reports, audit filings) — without uploading files externally.
+
+2. **Integrated Financial Analysis**  
+   Can be extended to connect with structured or relational databases (e.g. SQL, Excel exports) for faster, automated analysis — especially useful for CFOs, controllers, and treasury teams.
+
+3. **Format-Agnostic by Design**  
+   Many financial reports follow similar templates (e.g. 10-Ks, annual reports, filings), so high performance can be achieved without needing extreme reasoning or complex parsing logic.
+
 
 ## 🚀 Status: Live Demo Deployed on Azure
 
@@ -20,7 +36,7 @@ Core features like RAG retrieval, GPT-3.5 QA, FAISS index, and a working fronten
 Agent logic, retriever training, and advanced evaluation remain in progress.
 
 ⚠️ **Note:** This demo runs on a low-cost Azure VM with limited memory and compute.  
-As a result, response times may be very slow or unstable.  
+As a result, response times may be very slow or unstable, and accuracy might be low.  
 For production use:
 - Scale up to a larger cloud instance (e.g., Azure Standard B2s or above)
 - Integrate a more capable LLM (e.g., GPT-4-turbo or fine-tuned domain-specific model)
@@ -46,7 +62,7 @@ For production use:
 
 ---
 
-### ☁️ Planned (Future Enhancements)
+### ☁️ Potential Expansion
 
 - 🧑‍💼 **LangChain-style Agent Execution** with interpretable traces
 - 📊 **Side-by-Side RAG vs Agent Evaluation**
@@ -55,30 +71,16 @@ For production use:
 
 ---
 
-## 💡 Why This Matters
-
-Documents like 10-Ks and regulatory filings contain dense, high-stakes information.  
-Building QA systems that are:
-
-- **Precise** (return correct numbers)
-- **Transparent** (show where answers came from)
-- **Flexible** (work across domains like audit, legal, compliance)
-
-…is critical for GenAI adoption in the financial industry.
-
-This project demonstrates how retrieval, LLM reasoning, and structured evaluation can be combined into a clear and extensible system.
-
----
-
 ## 📦 Technologies Used
 
-- Python 3.10+
-- FAISS (semantic vector index)
-- HuggingFace `sentence-transformers`
-- OpenAI GPT-3.5 (chat + completion)
-- Streamlit
-- Azure B1s VM
-- CSV/JSON-based benchmarking and evaluation
+- **Python 3.10+**
+- **FAISS** — Semantic vector index for fast retrieval
+- **HuggingFace `sentence-transformers`** — Embedding generation for chunk retrieval
+- **OpenAI GPT-3.5** — Used via `openai` Python SDK for chat-based generation
+- **LangChain (light usage)** — Used for a modular, interpretable answer generation pipeline
+- **Streamlit** — Lightweight frontend for user interaction and live QA
+- **Azure B1s Linux VM** — Hosting the app with persistent FAISS index and secure `.env` access
+- **CSV / JSON** — Benchmarking, QA evaluation, and result storage
 
 ---
 
