@@ -15,6 +15,14 @@ PRELOADED_REPORTS = {
 st.title("Financial Report Q&A Assistant")
 st.write("Select a preloaded financial report and ask questions using RAG or Agentic reasoning.")
 
+st.markdown(
+    """
+    ### ⚠️ Note  
+    This is a prototype system running on a low-cost Azure VM (B1s tier).  
+    Response time and model accuracy may vary due to resource limits.  
+    """
+)
+
 # 1. Disabled Upload TXT file input (demo only)
 st.file_uploader("Upload a financial report (.txt) - Disabled in demo", disabled=True, help="Upload disabled in demo version. Use preloaded reports.")
 
