@@ -11,10 +11,13 @@ The system extracts structured insights (e.g. revenue, cash flow, debt) from pub
 
 ---
 
-## 🚧 Status: Partially Complete (Live Azure Demo)
+## 🚀 Status: Live Demo Deployed on Azure
 
-This is a **portfolio demo**, deployed and running on an Azure VM.  
-Core features are implemented and working; others are scaffolded or planned.
+This is a **portfolio demo**, publicly deployed and running on an Azure B1s Linux VM:  
+🔗 [**Live App** (Streamlit)](http://20.199.160.183:8501/)
+
+Core features like RAG retrieval, GPT-3.5 QA, FAISS index, and a working frontend are fully implemented.  
+Agent logic, retriever training, and advanced evaluation remain in progress.
 
 ---
 
