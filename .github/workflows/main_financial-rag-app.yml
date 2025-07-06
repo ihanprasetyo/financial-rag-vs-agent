@@ -65,9 +65,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_1A49C63B02A740208EDDAAED8F7E7E82 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_65F24F9F64C74205A59132F52A6AA654 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_983072FA23B546C587F7BCCCBE61C9DE }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_D7DC7169B2BE405EBF179D373A054188 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_2DFAEF252BAB476EAFE6B72D0BF0D907 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_716371A22E6D4259B1A98769BB14A85C }}
 
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
@@ -75,4 +75,4 @@ jobs:
         with:
           app-name: 'financial-rag-app'
           slot-name: 'Production'
-          package: ${{ github.workspace }}
+          
